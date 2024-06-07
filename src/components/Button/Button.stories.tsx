@@ -1,38 +1,25 @@
-import { Button, CustomButtonProps } from "./Button";
+import { Button, ButtonProps } from "./Button";
+import {StoryFn}  from "@storybook/react";
 
 export default {
   title: "Component/Button",
   component: Button,
-  argTypes: {
-    role: { control: 'text' },
-    ariaLabel: { control: 'text' },
-    backgroundColor: { control: 'color' },
-    textColor: { control: 'color' },
-    width: { control: 'text' },
-    height: { control: 'text' },
-    disabled: { control: 'boolean' },
-  },
 };
 
-const Template = (args: CustomButtonProps) => {
-  return <Button {...args} />;
+const Template = (args: ButtonProps) => {
+  return (<Button {...args} />);
 };
 
 const props = {
   defaultProps: () => ({
-    children: "Test Button",
-    role: "button",
-    ariaLabel: "blue button",
-    backgroundColor: "blue",
-    width: "auto",
-    height: "auto",
-    disabled: false,
+    label: "Test Button",
+    variant: "contained",
   }),
 };
 
-export const ButtonStory: any = Template.bind({});
+export const ButtonStory: StoryFn<typeof Button>  = Template.bind({});
 const defaultProps = props.defaultProps();
-ButtonStory.storyName = "Custom Button";
+ButtonStory.storyName = "Button";
 ButtonStory.args = {
-  ...defaultProps, // Add the 'storyName' property to fix the error.
-}; // Add 'as CustomButtonProps' to fix the error.
+  ...defaultProps,
+};

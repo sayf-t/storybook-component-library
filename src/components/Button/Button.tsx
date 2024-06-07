@@ -1,67 +1,23 @@
-import React, { MouseEventHandler } from "react";
+import React from "react";
+import {
+  Button as MuiButton,
+  ButtonProps as MUIButtonProps,
+} from "@mui/material";
 
-export type CustomButtonType =
-  | "primary"
-  | "primary-variant"
-  | "secondary"
-  | "tertiary"
-  | "critical"
-  | "success"
-  | "white"
-  | "dark"
-  | "default";
-
-export type CustomButtonVariant = "contained" | "outline" | "text";
-
-export interface CustomButtonProps {
-  children: string;
-  role?: string;
-  ariaLabel?: string;
-  backgroundColor?: string;
-  textColor?: string;
-  width?: string;
-  height?: string;
-  disabled?: boolean;
-  type?: CustomButtonType;
-  variant?: CustomButtonVariant;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
-  onMouseOver?: MouseEventHandler<HTMLButtonElement>;
+export interface ButtonProps extends MUIButtonProps {
+  label: string;
+  variant?: 'text' | 'contained' | 'outlined';
 }
 
-export const Button = ({
-  children,
-  role = "button",
-  ariaLabel,
-  backgroundColor = "transparent",
-  textColor = "inherit",
-  width = "auto",
-  height = "auto",
-  disabled = false,
-  onClick,
-  onMouseOver,
-}: CustomButtonProps) => {
-  const style = {
-    backgroundColor,
-    color: textColor,
-    width,
-    height,
-    cursor: disabled ? "not-allowed" : "pointer",
-    opacity: disabled ? 0.6 : 1,
-    whitespace: "normal",
-  };
+export const Button: React.FC<ButtonProps> = ({label, variant, ...props}) => {
 
   return (
-    <button
-      role={role}
-      aria-label={ariaLabel}
-      style={style}
-      disabled={disabled}
-      onClick={onClick}
-      onMouseOver={onMouseOver}
-    >
-      {children}
-    </button>
+    <MuiButton variant={variant} {...props}>
+      {label}
+    </MuiButton>
   );
 };
+
+// Button.defaultProps = {variant: "contained"};
 
 export default Button;
