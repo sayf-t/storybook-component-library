@@ -1,5 +1,4 @@
 import { TextField as MUITextField } from "@mui/material";
-import * as React from "react";
 
 export interface TextFieldProps {
   id?: string;

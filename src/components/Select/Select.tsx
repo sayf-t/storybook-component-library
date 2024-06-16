@@ -1,5 +1,4 @@
 import { Select, SelectChangeEvent, InputLabel, MenuItem, FormControl } from "@mui/material";
-import * as React from "react";
 
 export interface SelectProps {
   id?: string;

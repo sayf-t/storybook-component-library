@@ -1,5 +1,4 @@
 import { Switch as MUISwitch, SwitchProps as MUISwitchProps } from "@mui/material";
-import * as React from "react";
 
 export interface SwitchProps extends MUISwitchProps {
   label?: { inputProps: { "aria-label": string }} ;
