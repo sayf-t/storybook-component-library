@@ -14,10 +14,12 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.19",
     "@mui/material": "^5.15.18",
     "@mui/system": "^5.15.15",
     "@mui/types": "^7.2.14",
     "@storybook/addon-a11y": "^8.1.5",
+    "@storybook/addon-actions": "^8.1.9",
     "@storybook/addon-themes": "^8.1.5",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
