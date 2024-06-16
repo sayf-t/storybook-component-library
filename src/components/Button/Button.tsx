@@ -26,6 +26,4 @@ export const Button: React.FC<ButtonProps> = ({children, size, color, disabled, 
   );
 };
 
-// Button.defaultProps = {variant: "contained"};
-
 export default Button;
