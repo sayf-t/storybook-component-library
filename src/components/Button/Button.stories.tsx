@@ -1,25 +1,40 @@
+import { StoryFn, Meta } from "@storybook/react";
 import { Button, ButtonProps } from "./Button";
-import {StoryFn}  from "@storybook/react";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 export default {
   title: "Component/Button",
   component: Button,
+} as Meta;
+
+const Template: StoryFn<ButtonProps> = (args) => <Button {...args} />;
+
+export const Default = Template.bind({});
+Default.storyName = "Button";
+Default.args = {
+  children: "Test Button",
+  variant: "contained",
+  size: "medium",
+  color: "primary",
+  disabled: false, 
 };
 
-const Template = (args: ButtonProps) => {
-  return (<Button {...args} />);
+export const Disabled = Template.bind({});
+Disabled.storyName = "Disabled Button";
+Disabled.args = {
+  children: "Test Button",
+  variant: "contained",
+  size: "medium",
+  color: "primary",
+  disabled: true,
 };
 
-const props = {
-  defaultProps: () => ({
-    label: "Test Button",
-    variant: "contained",
-  }),
-};
-
-export const ButtonStory: StoryFn<typeof Button>  = Template.bind({});
-const defaultProps = props.defaultProps();
-ButtonStory.storyName = "Button";
-ButtonStory.args = {
-  ...defaultProps,
+export const ButtonWithStartIcon = Template.bind({});
+ButtonWithStartIcon.args = {
+  children: "Test Button",
+  variant: "contained",
+  size: "medium",
+  color: "primary",
+  disabled: false,
+  startIcon: <DeleteIcon />,
 };
