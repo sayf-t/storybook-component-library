@@ -3,7 +3,7 @@ import { Avatar, AvatarProps } from "./Avatar"
 import { AvatarGroup } from "@mui/material";
 
 export default {
-  title: "Component/Avatar",
+  title: "Components/Avatar",
   component: Avatar,
 } as Meta;
 

@@ -9,7 +9,7 @@ import {
 import { ExpandMore } from "@mui/icons-material";
 
 export default {
-  title: "Component/Accordion",
+  title: "Components/Accordion",
   component: Accordion,
 } as Meta;
 

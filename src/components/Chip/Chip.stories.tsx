@@ -4,7 +4,7 @@ import { Chip, ChipProps } from "./Chip";
 import { action } from "@storybook/addon-actions";
 
 export default {
-  title: "Component/Chip",
+  title: "Components/Chip",
   component: Chip,
 } as Meta;
 

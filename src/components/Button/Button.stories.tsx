@@ -3,7 +3,7 @@ import { Button, ButtonProps } from "./Button";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 export default {
-  title: "Component/Button",
+  title: "Components/Button",
   component: Button,
 } as Meta;
 

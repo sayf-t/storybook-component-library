@@ -3,7 +3,7 @@ import { ButtonGroup } from "./ButtonGroup";
 import { Button } from "@mui/material";
 
 export default {
-  title: "Component/ButtonGroup",
+  title: "Components/ButtonGroup",
   component: ButtonGroup,
 } as Meta;
 
