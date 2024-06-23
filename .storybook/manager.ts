@@ -5,7 +5,7 @@ const theme = create({
   base: 'dark',
   brandTitle: 'Sayf Storybook',
   brandUrl: '#',
-  brandImage: 'public/logo.png'});
+  brandImage: '/logo.png'});
 
 addons.setConfig({
   theme,
