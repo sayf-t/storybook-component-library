@@ -1,7 +1,9 @@
-import React from 'react';
-import { CssBaseline, ThemeProvider } from '@mui/material';
-import { withThemeFromJSXProvider } from '@storybook/addon-themes'
-import theme from '../src/theme';
+import React from "react";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import { withThemeFromJSXProvider } from "@storybook/addon-themes";
+import theme from "../src/theme";
+// import { parameters  } from "@storybook/react";
+
 
 // const withThemeProvider = (Story, context) => (
 //   <ThemeProvider theme={theme}>
@@ -15,10 +17,10 @@ export const decorators = [
       light: theme,
       dark: theme,
     },
-    defaultTheme: 'light',
+    defaultTheme: "light",
     Provider: ThemeProvider,
     GlobalStyles: CssBaseline,
-  })
+  }),
 ];
 
 export default {
@@ -28,6 +30,11 @@ export default {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
+      },
+    },
+    options: {
+      storySort: {
+        order: ['Intro'],
       },
     },
   },
