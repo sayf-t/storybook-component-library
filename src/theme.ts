@@ -1,18 +1,22 @@
 import { createTheme } from "@mui/material/styles";
-import {  purple, red } from "@mui/material/colors";
+import { red } from "@mui/material/colors";
 
 const theme = createTheme({
     palette: {
         primary: {
-            main: purple[500],
+            main: "#556cd6",
         },
         secondary: {
             main: red[500],
         },
     },
-    shadows: undefined,
-    spacing: undefined,
-    typography: undefined,
+    // shadows: undefined,
+    // spacing: undefined,
+    // typography: undefined,
 });
+
+// TODO: Add more customizations to the theme
+// darkTheme.ts
+// lightTheme.ts
 
 export default theme;
