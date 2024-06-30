@@ -6,7 +6,7 @@ export default {
 
 const Template: StoryFn = () => (
     <div>
-        <h1>Welcome to Sayf Storybook</h1>
+        <h1>Welcome to FalconUI</h1>
         <p>
         This is a collection of components that can be used to build web
         applications. Each component is documented with examples and usage

@@ -3,9 +3,9 @@ import { create } from '@storybook/theming';
 
 const theme = create({
   base: 'dark',
-  brandTitle: 'Sayf Storybook',
+  brandTitle: 'FalconUI by Sayf',
   brandUrl: '#',
-  brandImage: '/logo.png'});
+  brandImage: '/falcon_ui.png'});
 
 addons.setConfig({
   theme,
