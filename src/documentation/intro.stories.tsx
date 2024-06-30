@@ -1,8 +1,7 @@
 import { Meta, StoryFn } from "@storybook/react";
-import Typography from "../components/Typography";
 
 export default {
-  title: "Intro",
+  title: "Documentation/Intro",
 } as Meta;
 
 const Template: StoryFn = () => (
@@ -19,8 +18,10 @@ const Template: StoryFn = () => (
         interact with the component and see how it behaves under different
         conditions.
         </p>
+
+        <h2>Feedback</h2>
         <p>
-        If you have any questions or need help, please refer to the documentation, or reach out to the FalconUI team for assistance at <Typography>sayfcodes@gmail.com</Typography>.
+        If you have any questions or need help, please refer to the documentation, or reach out to the FalconUI team for assistance at <a>sayfcodes@gmail.com</a>.
         </p>
     </div>
 );

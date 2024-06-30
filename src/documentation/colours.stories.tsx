@@ -4,7 +4,7 @@ import { Meta, StoryFn } from "@storybook/react";
 import styles from './colours.module.css';
 
 export default {
-  title: "Colours",
+  title: "Documentation/Colours",
 } as Meta;
 
 const Template: StoryFn = () => (

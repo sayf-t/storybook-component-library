@@ -44,7 +44,11 @@ export const parameters = {
   },
   options: {
     storySort: {
-      order: ['Intro'],
+      order: [
+        'Documentation',
+        ['Intro', 'Colours'],
+        'Components'
+      ],
     },
   },
 };
