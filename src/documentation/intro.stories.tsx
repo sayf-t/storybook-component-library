@@ -1,4 +1,5 @@
 import { Meta, StoryFn } from "@storybook/react";
+import Typography from "../components/Typography";
 
 export default {
   title: "Intro",
@@ -17,6 +18,9 @@ const Template: StoryFn = () => (
         to find a specific component. You can also use the controls panel to
         interact with the component and see how it behaves under different
         conditions.
+        </p>
+        <p>
+        If you have any questions or need help, please refer to the documentation, or reach out to the FalconUI team for assistance at <Typography>sayfcodes@gmail.com</Typography>.
         </p>
     </div>
 );
